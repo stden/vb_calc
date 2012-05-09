@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Расчёт")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("Hewlett-Packard")> 
+<Assembly: AssemblyCompany("Дима")> 
 <Assembly: AssemblyProduct("Расчёт")> 
-<Assembly: AssemblyCopyright("Copyright © Hewlett-Packard 2012")> 
+<Assembly: AssemblyCopyright("Copyright © Дима")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>

@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class MainForm
     Private Sub Расчёт_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Расчёт.Click
 
         ' == Получаем все данные из формы ==

@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class MainForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -41,13 +41,14 @@ Partial Class Form1
         Me.V_Prod_N_TB = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Prib_TB = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.A0_TB = New System.Windows.Forms.TextBox()
         Me.Доход_TB = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Prib_TB = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.A0_TB = New System.Windows.Forms.TextBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         CType(Me.Таблица, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -148,11 +149,11 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(774, 35)
+        Me.Label1.Location = New System.Drawing.Point(762, 35)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(109, 26)
+        Me.Label1.Size = New System.Drawing.Size(130, 26)
         Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Пpоцентная ставка " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "налога на пpибыль"
+        Me.Label1.Text = "Пpоцентная ставка " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "налога на пpибыль (в %)"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label2
@@ -242,14 +243,24 @@ Partial Class Form1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Результаты"
         '
-        'PictureBox1
+        'Доход_TB
         '
-        Me.PictureBox1.Image = Global.Расчёт.My.Resources.Resources.Схема
-        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(744, 463)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.Доход_TB.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.Доход_TB.Location = New System.Drawing.Point(410, 13)
+        Me.Доход_TB.Name = "Доход_TB"
+        Me.Доход_TB.Size = New System.Drawing.Size(128, 20)
+        Me.Доход_TB.TabIndex = 19
+        Me.Доход_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(6, 16)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(292, 13)
+        Me.Label8.TabIndex = 20
+        Me.Label8.Text = "Доход за реализацию продукции предыдущих периодов"
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Prib_TB
         '
@@ -269,6 +280,15 @@ Partial Class Form1
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "Прибыль"
         Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.Calc.My.Resources.Resources.Схема
+        Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(744, 463)
+        Me.PictureBox1.TabIndex = 0
+        Me.PictureBox1.TabStop = False
         '
         'Label7
         '
@@ -290,30 +310,22 @@ Partial Class Form1
         Me.A0_TB.Text = "0,20"
         Me.A0_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
-        'Доход_TB
+        'Label9
         '
-        Me.Доход_TB.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
-        Me.Доход_TB.Location = New System.Drawing.Point(410, 13)
-        Me.Доход_TB.Name = "Доход_TB"
-        Me.Доход_TB.Size = New System.Drawing.Size(128, 20)
-        Me.Доход_TB.TabIndex = 19
-        Me.Доход_TB.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(747, 277)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(136, 13)
+        Me.Label9.TabIndex = 20
+        Me.Label9.Text = "Реализация по периодам"
+        Me.Label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(6, 16)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(292, 13)
-        Me.Label8.TabIndex = 20
-        Me.Label8.Text = "Доход за реализацию продукции предыдущих периодов"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Form1
+        'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(918, 558)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.A0_TB)
         Me.Controls.Add(Me.GroupBox1)
@@ -332,7 +344,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.ZatrPprodTB)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Name = "Form1"
+        Me.Name = "MainForm"
         Me.Text = "ПРОГРАММА РАСЧЕТА ОБЪЕМА ПРОИЗВОДСТВА       "
         CType(Me.Таблица, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
@@ -368,5 +380,6 @@ Partial Class Form1
     Friend WithEvents A0_TB As System.Windows.Forms.TextBox
     Friend WithEvents Доход_TB As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 
 End Class
