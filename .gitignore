@@ -9,3 +9,7 @@ obj/
 #Resource Caches
 _ReSharper.*
 *.sln.cache
+
+# Delphi
+*.local
+*.exe
