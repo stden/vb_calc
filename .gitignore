@@ -1,0 +1,15 @@
+# Build and Object Folders
+bin/
+obj/
+
+#User Specific Files
+*.user
+*.suo
+
+#Resource Caches
+_ReSharper.*
+*.sln.cache
+
+# Delphi
+*.local
+*.exe
